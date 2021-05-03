@@ -1,4 +1,4 @@
-const { findTodo } = require('./findTodo')
+const { findKeyword } = require('./findKeyword')
 const fs = require('fs')
 
 beforeAll(() => {
@@ -16,8 +16,8 @@ beforeAll(() => {
 
 })
 
-test('findTodo works as expect', () => {
-    const result = findTodo('src')
+test('findKeyword works as expect', () => {
+    const result = findKeyword('src')
     expect(result.includes('src/test/dir1/file1.js')).toBe(true)
     expect(result.includes('src/test/dir2/file2.js')).toBe(true)
     expect(result.includes('src/test/dir1/dir1.1/file1.1.js')).toBe(true)

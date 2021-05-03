@@ -1,4 +1,5 @@
-const { findTodo } = require('./src/service/findTodo')
+const { findKeyword } = require('./src/service/findKeyword')
 
-const todoList = findTodo('src')
-console.log('List all TODOs:', todoList)
+module.exports = {
+    findKeyword
+}
